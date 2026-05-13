@@ -3,4 +3,7 @@
     <string name="bannerText">LIVE YOUR\nPERFECT</string>
     <string name="splashText1">Smart, Fashionable &amp; gorgeous\ncollection makes you cool</string>
     <string name="startBtn">Get Started</string>
+    <string name="search">Search anything</string>
+    <string name="dashboard">Dashboard image</string>
+    <string name="category">Category</string>
 </resources>
