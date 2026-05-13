@@ -1,0 +1,89 @@
+{"Banner": [
+    {
+      "url": "https://res.cloudinary.com/dkikc5ywq/image/upload/v1742985788/banner_n5nxnq.png"
+    }
+  ],
+  "Category": [
+    {
+      "id": 0,
+      "title": "Trending"
+    },
+    {
+      "id": 1,
+      "title": "Men"
+    },
+    {
+      "id": 2,
+      "title": "Women"
+    },
+    {
+      "id": 3,
+      "title": "Classic"
+    },
+    {
+      "id": 4,
+      "title": "Digital"
+    }
+  ],
+  "Popular": [
+{
+      "description": "Larger display with up to 30 percent more screen space. A thinner, lighter design that’s more comfortable to wear. Advanced features to help you stay healthy and active provide valuable insights. Safety features help you get help when you need it. Faster charging—you can charge to 80 percent in about 30 minutes.",
+    
+      "picUrl": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1742997003/watch0_1_ytmnew.png",
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1742997000/watch0_2_rdnnso.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1742997000/watch0_3_bk2enl.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1742997005/watch0_4_oowvnc.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1742997005/watch0_5_my3w4r.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1742997009/watch0_6_xvpcuh.png"
+      ],
+	"thumbnail":"https://res.cloudinary.com/dkikc5ywq/image/upload/v1742996999/watch0_0_jpqhma.png",
+      "price": 442.95,
+      "rating": 4.6,
+      "title": "Apple Watch Series 10"
+    },{
+      "description": "All the motivation you need to move more, stay connected, healthy, and safe. watchOS 11 brings more smart, personalized features and more ways to communicate more easily. And with features like Incident Detection and advanced workout metrics, Apple Watch SE is a sweet deal.",
+    
+      "picUrl": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000009/watch4_1_uue6kk.png",
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000014/watch4_2_oypj0m.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000011/watch4_3_yjvxvb.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000014/watch4_4_j2j9cj.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000015/watch4_5_kd6k43.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000005/watch4_6_l5z6wr.png"
+      ],
+	"thumbnail":"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743000004/watch4_0_oi5b7o.png",
+      "price": 231.95,
+      "rating": 4.6,
+      "title": "Apple Watch SE"
+    },{
+      "description": " This is the ultimate watch for athletes and adventurers. Advanced features for runners, swimmers, divers, cyclists, hikers and more. Rugged titanium case, now available in satin black. Super-bright always-on Retina display. Ultra-precise dual-frequency GPS.Strong health, safety and connectivity features. Up to 36 hours of battery life, up to 72 hours in low-power mode.",
+    
+      "picUrl": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153554/watch_5_1_iwuifu.png",
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153563/watch_5_2_trmib2.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153555/watch_5_3_y3hfqx.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153561/watch_5_4_fkjhka.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153561/watch_5_5_aexau2.png"
+      ],
+	"thumbnail":"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153549/watch_5_0_earpwo.png",
+      "price": 897.95,
+      "rating": 4.5,
+      "title": "Apple Watch Ultra 2"
+    },{
+      "description": "Your ultimate device for a healthy life is now even more powerful. The S9 chip brings a super-bright display to Apple Watch in new ways that let you quickly and easily navigate the screen without touching it. Advanced features to help you stay healthy, safe, and active offer valuable insights and guidance when you need it. And with all-new apps in watchOS, you can see more information at a glance.",
+    
+      "picUrl": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743154004/watch6_1_5_nh9s88.png",
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743154005/watch6_1_1_lqkgxh.png",
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1743153999/watch6_1_2_krbiar.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743154002/watch6_1_3_m26ysz.png",
+	"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743154003/watch6_1_4_xahisd.png"
+      ],
+	"thumbnail":"https://res.cloudinary.com/dkikc5ywq/image/upload/v1743154002/watch6_1_0_wbsao6.png",
+      "price": 399.00,
+      "rating": 4.7,
+      "title": "Apple Watch Series 9"
+    }
+]
+}
