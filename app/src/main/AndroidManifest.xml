@@ -13,7 +13,8 @@
         android:theme="@style/Theme.OnlineShopApp">
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            tools:ignore="CustomSplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
