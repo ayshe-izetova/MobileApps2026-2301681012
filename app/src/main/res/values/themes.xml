@@ -2,4 +2,8 @@
 <resources>
 
     <style name="Theme.OnlineShopApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
 </resources>
