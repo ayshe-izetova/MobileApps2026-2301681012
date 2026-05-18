@@ -1,14 +1,12 @@
 package com.example.onlineshopapp.model
 
-import androidx.lifecycle.ViewModel
-import com.example.onlineshopapp.repository.MainRepository
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
 import com.example.onlineshopapp.domain.BannerModel
+import com.example.onlineshopapp.repository.MainRepository
 
-class MainViewModel:ViewModel() {
-    private val repository=MainRepository()
+class MainViewModel : ViewModel() {
+    private val repository = MainRepository()
 
-    fun loadBanner():LiveData<MutableList<BannerModel>>{
-        return repository.loadBanner()
-    }
+    fun loadBanner(): LiveData<List<BannerModel>> = repository.loadBanner()
 }
