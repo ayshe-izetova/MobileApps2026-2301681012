@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.OnlineShopApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.OnlineShopApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
     <style name="CircleImageView">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">15dp</item>
     </style>
+
 </resources>
