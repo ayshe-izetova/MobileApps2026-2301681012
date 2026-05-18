@@ -6,4 +6,9 @@
     <string name="search">Search anything</string>
     <string name="dashboard">Dashboard image</string>
     <string name="category">Category</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="myOrder">My Order</string>
+    <string name="profile">Profile</string>
 </resources>
