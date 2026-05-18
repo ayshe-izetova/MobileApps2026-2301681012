@@ -1,32 +1,44 @@
-package com.example.onlineshopapp
+package com.example.onlineshopapp.activity
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.bumptech.glide.Glide
+import com.example.onlineshopapp.databinding.ActivityMainBinding
+import com.example.onlineshopapp.model.MainViewModel
 import com.example.onlineshopapp.ui.theme.onlineShopAppTheme
 
 class MainActivity : ComponentActivity() {
+    lateinit var binding: ActivityMainBinding
+    private val viewModel = MainViewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
-            onlineShopAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding),
-                    )
-                }
-            }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
+
+        initBanner()
+    }
+
+    private fun initBanner() {
+        binding.progressBarBanner.visibility = View.VISIBLE
+
+        viewModel.loadBanner().observeForever {
+            Glide
+                .with(binding.banner.context)
+                .load(it[0].url)
+                .into(binding.banner)
+
+            binding.progressBarBanner.visibility = View.GONE
         }
+        viewModel.loadBanner()
     }
 }
 
