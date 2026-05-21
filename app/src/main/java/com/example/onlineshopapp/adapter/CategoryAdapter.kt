@@ -10,7 +10,7 @@ import com.example.onlineshopapp.databinding.ViewholderCategoryBinding
 import com.example.onlineshopapp.domain.CategoryModel
 
 class CategoryAdapter(
-    private val items: MutableList<CategoryModel>,
+    private val items: List<CategoryModel>,
 ) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
     private lateinit var context: Context
     private var selectedPosition = -1
