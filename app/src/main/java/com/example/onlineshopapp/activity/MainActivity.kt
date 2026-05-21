@@ -10,8 +10,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.bumptech.glide.Glide
 import com.example.onlineshopapp.databinding.ActivityMainBinding
-import com.example.onlineshopapp.model.MainViewModel
 import com.example.onlineshopapp.ui.theme.onlineShopAppTheme
+import com.example.onlineshopapp.viewmodel.MainViewModel
 
 class MainActivity : ComponentActivity() {
     lateinit var binding: ActivityMainBinding

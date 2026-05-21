@@ -11,4 +11,5 @@
     <string name="favorite">Favorite</string>
     <string name="myOrder">My Order</string>
     <string name="profile">Profile</string>
+    <string name="title">title</string>
 </resources>
