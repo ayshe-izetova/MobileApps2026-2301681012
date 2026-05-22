@@ -12,4 +12,5 @@
     <string name="myOrder">My Order</string>
     <string name="profile">Profile</string>
     <string name="title">title</string>
+    <string name="price">$0</string>
 </resources>
