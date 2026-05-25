@@ -13,4 +13,11 @@
     <string name="profile">Profile</string>
     <string name="title">title</string>
     <string name="price">$0</string>
+    <string name="priceName">Price</string>
+    <string name="zero">0</string>
+    <string name="detail">Product Detail</string>
+    <string name="description">description</string>
+    <string name="color">Select Color</string>
+    <string name="buy">Buy Now</string>
+    <string name="add">Add to Cart</string>
 </resources>

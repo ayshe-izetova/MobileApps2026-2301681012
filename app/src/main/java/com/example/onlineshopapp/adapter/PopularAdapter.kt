@@ -1,10 +1,12 @@
 package com.example.onlineshopapp.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.onlineshopapp.activity.DetailActivity
 import com.example.onlineshopapp.databinding.ViewholderPopularBinding
 import com.example.onlineshopapp.domain.ItemsModel
 
@@ -37,6 +39,12 @@ class PopularAdapter(
             .with(context)
             .load(items[position].thumbnail)
             .into(holder.binding.pic)
+
+        holder.binding.root.setOnClickListener {
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("object", items[position])
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = items.size
