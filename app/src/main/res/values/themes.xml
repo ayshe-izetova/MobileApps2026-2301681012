@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.OnlineShopApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.OnlineShopApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorPrimaryVariant">@color/orange</item>
         <item name="colorOnPrimary">@color/white</item>
     </style>
 
