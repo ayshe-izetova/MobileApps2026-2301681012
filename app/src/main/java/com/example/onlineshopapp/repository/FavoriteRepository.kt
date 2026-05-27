@@ -4,7 +4,9 @@ import android.content.Context
 import com.example.onlineshopapp.data.local.DatabaseProvider
 import com.example.onlineshopapp.data.local.FavoriteEntity
 
-class FavoriteRepository(context: Context) {
+class FavoriteRepository(
+    context: Context,
+) {
     private val favoriteDao =
         DatabaseProvider.getDatabase(context).favoriteDao()
 
@@ -12,9 +14,7 @@ class FavoriteRepository(context: Context) {
         favoriteDao.insertFavorite(favorite)
     }
 
-    suspend fun getAllFavorites(): List<FavoriteEntity> {
-        return favoriteDao.getAllFavorites()
-    }
+    suspend fun getAllFavorites(): List<FavoriteEntity> = favoriteDao.getAllFavorites()
 
     suspend fun updateFavorite(favorite: FavoriteEntity) {
         favoriteDao.updateFavorite(favorite)
