@@ -22,6 +22,10 @@ class FavoritesActivity : AppCompatActivity() {
         binding.recyclerViewFavorites.layoutManager =
             LinearLayoutManager(this)
 
+        binding.backBtn.setOnClickListener {
+            finish()
+        }
+
         loadFavorites()
     }
 
