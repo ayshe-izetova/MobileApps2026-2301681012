@@ -1,5 +1,6 @@
 package com.example.onlineshopapp.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
@@ -7,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.example.onlineshopapp.activity.FavoritesActivity
 import com.example.onlineshopapp.adapter.CategoryAdapter
 import com.example.onlineshopapp.adapter.PopularAdapter
 import com.example.onlineshopapp.databinding.ActivityMainBinding
@@ -20,12 +22,20 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.imageViewFavorite.setOnClickListener {
+            startActivity(Intent(this, FavoritesActivity::class.java))
+        }
 
         setContentView(binding.root)
 
         initBanner()
         initCategory()
         initPopular()
+
+        binding.imageViewFavorite.setOnClickListener {
+            val intent = Intent(this, FavoritesActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initPopular() {

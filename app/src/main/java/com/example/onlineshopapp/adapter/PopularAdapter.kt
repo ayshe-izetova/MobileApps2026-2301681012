@@ -41,9 +41,12 @@ class PopularAdapter(
             .into(holder.binding.pic)
 
         holder.binding.root.setOnClickListener {
-            val intent = Intent(context, DetailActivity::class.java)
-            intent.putExtra("object", items[position])
-            context.startActivity(intent)
+            val currentPosition = holder.adapterPosition
+            if (currentPosition == RecyclerView.NO_POSITION) return@setOnClickListener
+
+            val intent = Intent(holder.itemView.context, DetailActivity::class.java)
+            intent.putExtra("object", items[currentPosition])
+            holder.itemView.context.startActivity(intent)
         }
     }
 
