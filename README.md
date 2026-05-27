@@ -141,4 +141,3 @@ https://github.com/ayshe-izetova/MobileApps2026-2301681012
 Автор
 Ayshe Izetova
 Android Mobile Applications Project
-2026
