@@ -1,5 +1,6 @@
 package com.example.onlineshopapp.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -59,6 +60,19 @@ class DetailActivity : AppCompatActivity() {
                     "Added to favorites",
                     Toast.LENGTH_SHORT,
                 ).show()
+        }
+
+        binding.button.setOnClickListener {
+            val shareText =
+                "Check this product: ${item.title} - $${item.price}"
+
+            val intent =
+                Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, shareText)
+                }
+
+            startActivity(Intent.createChooser(intent, "Share product"))
         }
     }
 
