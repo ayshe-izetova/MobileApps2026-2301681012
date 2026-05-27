@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.onlineshopapp.adapter.PicsAdapter
+import com.example.onlineshopapp.data.local.FavoriteEntity
+import com.example.onlineshopapp.data.local.FavoritesDbHelper
 import com.example.onlineshopapp.databinding.ActivityDetailBinding
 import com.example.onlineshopapp.domain.ItemsModel
 
@@ -39,10 +41,22 @@ class DetailActivity : AppCompatActivity() {
         }
 
         binding.favBtn.setOnClickListener {
+            val dbHelper = FavoritesDbHelper(this)
+
+            val favorite =
+                FavoriteEntity(
+                    id = item.title.hashCode(),
+                    title = item.title,
+                    price = item.price,
+                    imageUrl = item.picUrl.firstOrNull() ?: item.thumbnail,
+                )
+
+            dbHelper.insertFavorite(favorite)
+
             Toast
                 .makeText(
                     this,
-                    "Favorite clicked",
+                    "Added to favorites",
                     Toast.LENGTH_SHORT,
                 ).show()
         }
