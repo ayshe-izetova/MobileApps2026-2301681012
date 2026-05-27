@@ -9,6 +9,8 @@ import com.example.onlineshopapp.databinding.ViewholderFavoriteBinding
 
 class FavoritesAdapter(
     private val items: List<FavoriteEntity>,
+    private val onDeleteClick: (FavoriteEntity) -> Unit,
+    private val onUpdateClick: (FavoriteEntity) -> Unit,
 ) : RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
     class ViewHolder(
         val binding: ViewholderFavoriteBinding,
@@ -35,6 +37,12 @@ class FavoritesAdapter(
 
         holder.binding.favoriteTitleTxt.text = item.title
         holder.binding.favoritePriceTxt.text = "$${item.price}"
+        holder.binding.deleteFavoriteBtn.setOnClickListener {
+            onDeleteClick(item)
+        }
+        holder.binding.updateFavoriteBtn.setOnClickListener {
+            onUpdateClick(item)
+        }
 
         Glide
             .with(holder.itemView.context)

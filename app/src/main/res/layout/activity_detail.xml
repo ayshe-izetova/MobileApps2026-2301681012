@@ -183,18 +183,6 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/addToFavoriteBtn"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/black_stroke_bg"
-                    android:text="Add to favorite"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button2"
                     style="@android:style/Widget.Button"
                     android:layout_width="wrap_content"
