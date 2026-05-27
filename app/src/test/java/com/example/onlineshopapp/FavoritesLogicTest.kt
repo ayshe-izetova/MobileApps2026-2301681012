@@ -17,12 +17,13 @@ class FavoritesLogicTest {
 
     @Test
     fun favoritePrice_isUpdatedCorrectly() {
-        val favorite = FavoriteEntity(
-            id = 1,
-            title = "Samsung Watch",
-            price = 200.0,
-            imageUrl = "",
-        )
+        val favorite =
+            FavoriteEntity(
+                id = 1,
+                title = "Samsung Watch",
+                price = 200.0,
+                imageUrl = "",
+            )
 
         val updatedPrice = favorite.price + 1
 
@@ -31,21 +32,23 @@ class FavoritesLogicTest {
 
     @Test
     fun favoritesList_returnsCorrectSize() {
-        val favorites = listOf(
-            FavoriteEntity(1, "Apple Watch", 100.0, ""),
-            FavoriteEntity(2, "Samsung Watch", 200.0, ""),
-            FavoriteEntity(3, "Xiaomi Watch", 150.0, ""),
-        )
+        val favorites =
+            listOf(
+                FavoriteEntity(1, "Apple Watch", 100.0, ""),
+                FavoriteEntity(2, "Samsung Watch", 200.0, ""),
+                FavoriteEntity(3, "Xiaomi Watch", 150.0, ""),
+            )
 
         assertEquals(3, favorites.size)
     }
 
     @Test
     fun favoritesList_containsSelectedProduct() {
-        val favorites = listOf(
-            FavoriteEntity(1, "Apple Watch", 100.0, ""),
-            FavoriteEntity(2, "Samsung Watch", 200.0, ""),
-        )
+        val favorites =
+            listOf(
+                FavoriteEntity(1, "Apple Watch", 100.0, ""),
+                FavoriteEntity(2, "Samsung Watch", 200.0, ""),
+            )
 
         val containsProduct = favorites.any { it.title == "Apple Watch" }
 
